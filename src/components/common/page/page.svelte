@@ -1,5 +1,11 @@
 <script>
-	let name = 'world';
+	import Header from "../header/header.svelte"
 </script>
 
-<h1>Hello {name}!</h1>
+
+<style lang="scss">
+	@import "./page.scss";
+</style>
+
+
+<Header></Header>
