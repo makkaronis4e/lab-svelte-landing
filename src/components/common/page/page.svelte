@@ -1,5 +1,6 @@
 <script>
 	import Header from "../header/header.svelte"
+	import Button from "../../shared/button/Button.svelte"
 </script>
 
 
@@ -9,3 +10,4 @@
 
 
 <Header></Header>
+<Button></Button>
