@@ -6,8 +6,18 @@
 
 <style lang="scss">
 	@import "./page.scss";
+	.page {
+		width: 1200px;
+		margin: 0 auto;
+	}
+
+	.test {
+		background: red;
+		width: 404px;
+		height: 30px;
+	}
 </style>
-
-
-<Header></Header>
-<Button></Button>
+<div class="test"></div>
+<div class="page">
+	<Header></Header>
+</div>

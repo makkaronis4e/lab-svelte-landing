@@ -1,10 +1,21 @@
 <script>
-	let name = 'world';
+	import TopAppBar, {Row, Section, Title} from '@smui/top-app-bar';
 </script>
 
 <style lang="scss">
 	@import "./header.scss";
 </style>
 
-<h1 class="test">Hello {name}!</h1>
-<div class="test2">test2</div>
+
+<div class="container">
+	<div class="upper-header"></div>
+	 <TopAppBar variant="static" color='secondary'>
+        <Row>
+          <Section>
+            <Title>Static</Title>
+          </Section>
+          <Section align="end" toolbar>
+          </Section>
+        </Row>
+      </TopAppBar>
+</div>
