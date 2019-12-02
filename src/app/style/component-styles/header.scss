@@ -1,0 +1,26 @@
+.header_contacts {
+    margin: 10px 0;
+    text-align: right;
+}
+
+.upper-header__contacts__item {
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #565656;
+    font-family: "Arial";
+    text-align: right;
+}
+
+.upper-header__contacts__item:last-child {
+    margin-left: 60px;
+    position: relative;
+}
+
+.upper-header__contacts__item:last-child:before {
+    content: url("../../../assests/telephone.png");
+    width: 20px;
+    height: 20px;
+    left: -30px;
+    top: -3px;
+    position: absolute;
+}

@@ -3,12 +3,17 @@
 </script>
 
 <style lang="scss">
-	@import "./header.scss";
 </style>
 
 
-<div class="container">
-	<div class="upper-header"></div>
+<div class="header__container">
+	<div class="upper-header">
+    <div class="upper-header__contacts">
+      <a class="upper-header__contacts__item" href="mailto:abc@abc.abc">gabc@abc.abc</a>
+      <a class="upper-header__contacts__item" href="tel:+11111111">+38 1111111111111</a>
+    </div>
+  </div>
+
 	 <TopAppBar variant="static" color='secondary'>
         <Row>
           <Section>
@@ -17,5 +22,5 @@
           <Section align="end" toolbar>
           </Section>
         </Row>
-      </TopAppBar>
+    </TopAppBar>
 </div>
