@@ -7,5 +7,6 @@
 <style lang="scss">
 </style>
 <div class="page__container">
+	<div class="page_background"></div>
 	<Header></Header>
 </div>

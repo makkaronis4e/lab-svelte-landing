@@ -1,20 +1,37 @@
 <script>
-	import TopAppBar, {Row, Section, Title} from '@smui/top-app-bar';
+  import TopAppBar, {Row, Section, Title} from "@smui/top-app-bar";
+  import {Icon} from '@smui/common';
+  let mail = "gabc@abc.abc";
+  let phone = "+38 1111111111111";
+
+  let logoSrc = "../../../assets/telephone.png";
+
 </script>
 
-<style lang="scss">
-</style>
 
-
-<div class="header__container">
-	<div class="upper-header">
-    <div class="upper-header__contacts">
-      <a class="upper-header__contacts__item" href="mailto:abc@abc.abc">gabc@abc.abc</a>
-      <a class="upper-header__contacts__item" href="tel:+11111111">+38 1111111111111</a>
+<div class="top-container">
+  <aside class="main-logo-container">
+    <img src="assets/main-logo.png" class="main-logo-container__logo">
+  </aside>
+  <div class="header-container">
+    <div class="upper-header">
+      <div class="upper-header__contacts">
+        <a class="upper-header__contacts__item" href="mailto:>{mail}">
+          <Icon class="material-icons">mail_outline</Icon>
+          <span>
+            {mail}
+          </span>
+        </a>
+        <a class="upper-header__contacts__item" href="tel:{phone}">
+          <Icon class="material-icons">phone</Icon>
+          <span>
+            {phone}
+          </span>
+        </a>
+      </div>
     </div>
-  </div>
 
-	 <TopAppBar variant="static" color='secondary'>
+    <TopAppBar variant="static" color='secondary' class="header">
         <Row>
           <Section>
             <Title>Static</Title>
@@ -23,4 +40,7 @@
           </Section>
         </Row>
     </TopAppBar>
+  </div>
 </div>
+
+
