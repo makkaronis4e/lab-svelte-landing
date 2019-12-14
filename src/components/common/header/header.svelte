@@ -1,9 +1,23 @@
 <script>
   import TopAppBar, {Row, Section, Title} from "@smui/top-app-bar";
   import {Icon} from '@smui/common';
+  import MenuSurface, {Anchor} from '@smui/menu-surface';
+  import Button from '@smui/button';
+
+
+  let formSurface;
+
+  let pages = [
+    { name: "Main", page: "https://google.com" },
+    { name: "Services", page: "https://google.com" },
+    { name: "Product", page: "https://google.com" },
+    { name: "Info", page: "https://google.com" },
+    { name: "Contacts", page: "https://google.com" },
+    { name: "Personal cabinet", page: "https://google.com" },
+  ];
+
   let mail = "gabc@abc.abc";
   let phone = "+38 1111111111111";
-
   let logoSrc = "../../../assets/telephone.png";
 
 </script>
@@ -11,7 +25,7 @@
 
 <div class="top-container">
   <aside class="main-logo-container">
-    <img src="assets/main-logo.png" class="main-logo-container__logo">
+    <img src="assets/main-logo.png" class="main-logo-container__logo" alt="main-logo">
   </aside>
   <div class="header-container">
     <div class="upper-header">
@@ -31,12 +45,18 @@
       </div>
     </div>
 
-    <TopAppBar variant="static" color='secondary' class="header">
+    <TopAppBar dense="true" variant="static" color='primary' class="header">
         <Row>
-          <Section>
-            <Title>Static</Title>
+         {#each pages as page}
+          <Section class="header__nav-item">
+            <Button class="header__nav-item__button">{page.name}</Button>
           </Section>
-          <Section align="end" toolbar>
+          {/each}
+          <Section class="header__nav-item">
+           <Button class="header__nav-item__button" on:click={() => formSurface.setOpen(true)}>Log in</Button>
+            <MenuSurface bind:this={formSurface} anchorCorner="BOTTOM_LEFT">
+              <span>reg</span>
+            </MenuSurface>
           </Section>
         </Row>
     </TopAppBar>

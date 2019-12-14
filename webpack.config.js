@@ -1,12 +1,4 @@
 const webpack = require('webpack');
-// const pkg = require('./package.json');
-
-
-// const extensions = ['.mjs', '.js', '.json', '.svelte', '.html'];
-// const mainFields = ['svelte', 'module', 'browser', 'main'];
-
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const sassOptions = {
   includePaths: [
