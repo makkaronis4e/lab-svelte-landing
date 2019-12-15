@@ -11,5 +11,9 @@ $mdc-theme-background: #000;
 $mdc-theme-surface: #fff;
 $mdc-theme-error: #ff3e00;
 
+$mdc-top-app-bar-dense-section-horizontal-padding: 0 !default;
+
 @import "@material/theme/variables";
 @import "@material/theme/mdc-theme";
+
+@import "@smui/top-app-bar/style";
