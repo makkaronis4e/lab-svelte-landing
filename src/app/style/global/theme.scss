@@ -1,13 +1,15 @@
+
+@import "@material/theme/color-palette";
 @import "./_smui-theme.scss";
 
-$main-color: rgb(210, 223, 92);
 
-// Svelte Colors!
+$main-color: rgba(0, 0, 0, 0.68);
+
 $mdc-theme-primary: #ed9444;
-$mdc-theme-secondary: #676778;
-// Other Svelte color: #40b3ff
-
-$mdc-theme-background: #fff;
+$mdc-theme-secondary: $material-color-cyan-100;
+$mdc-theme-background: #000;
 $mdc-theme-surface: #fff;
-
 $mdc-theme-error: #ff3e00;
+
+@import "@material/theme/variables";
+@import "@material/theme/mdc-theme";

@@ -4,6 +4,22 @@
     margin: 0 auto;
     padding: 14px 40px;
     max-width: 1400px;
+
+    .page__main-container {
+        display: flex;
+
+        &__left-column {
+            width: 24%;
+            padding: 1em;
+        }
+
+        &__right-column {
+            flex-grow: 1;
+            padding: 1em;
+        }
+    }
+    
+
 }
 
 .page_background {
