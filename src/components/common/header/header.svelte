@@ -10,7 +10,7 @@
   let pages = [
     { name: "Main", page: "https://google.com" },
     { name: "Services", page: "https://google.com" },
-    { name: "Product", page: "https://google.com" },
+    { name: "Cats", page: "https://google.com" },
     { name: "Info", page: "https://google.com" },
     { name: "Contacts", page: "https://google.com" },
     { name: "Personal cabinet", page: "https://google.com" },

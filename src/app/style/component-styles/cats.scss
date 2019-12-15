@@ -1,0 +1,44 @@
+
+.cats__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    &__item {
+        margin-bottom: 3em;
+
+        .cat-card {
+            width: 18em;
+            overflow: hidden;
+            height: 8em;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            cursor: pointer;
+
+            &__left-column {
+                flex-grow: 1;
+                
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__right-column {
+                width: 40%;
+                position: relative;
+
+                &__like-button {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+
+
+}
