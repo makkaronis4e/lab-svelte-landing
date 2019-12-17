@@ -11,7 +11,7 @@
   $: atStart = offset === 0;
   $: atEnd = offset <= paginationFactor * (items.length - scrollBy) * -1;
 
-    const move = direction => {
+  const move = direction => {
     if (direction > 0 && !atEnd) {
       offset -= totalPaginationPixels;
 	}  else if (direction > 0 && atEnd) {
@@ -33,7 +33,7 @@
   <div class="items" style="transform: translateX({offset}px);">
     {#each items as item, i}
 	<div class="item-container">
-	    <div class="item" style="background-color: hsla({i * 25}deg, 75%, 55%);">{item}</div>
+	    <div class="item" style="background-image: url({item})"></div>
 	</div>
     {/each}
   </div>
@@ -56,7 +56,9 @@
   }
 
   .item {
-	width: 600px;
+	  width: 600px;
+    background-repeat: no-repeat;
+    background-size: cover; 
     height: 286px;
     margin: 0 auto;
     background-color: #ef4322;

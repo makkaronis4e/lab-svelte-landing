@@ -20,7 +20,15 @@
 
   let mail = "gabc@abc.abc";
   let phone = "+38 1111111111111";
-  let logoSrc = "../../../assets/telephone.png";
+
+  let carouselImages = [
+    "http://placekitten.com/500/280",
+    "http://placekitten.com/580/300",
+    "http://placekitten.com/640/300",
+    "http://placekitten.com/550/280",
+    "http://placekitten.com/600/250",
+    "http://placekitten.com/620/260",
+  ]
 
 </script>
 
@@ -66,7 +74,7 @@
       </TopAppBar>
     </div>
     <div class="top-container__right-column__carousel-container">
-      <Carousel></Carousel>
+      <Carousel bind:items = {carouselImages}></Carousel>
     </div>
   </div>
 </div>
