@@ -4,6 +4,8 @@
   import MenuSurface, {Anchor} from '@smui/menu-surface';
   import Button from '@smui/button';
 
+  import Carousel from "../carousel/carousel.svelte"
+
 
   let formSurface;
 
@@ -63,6 +65,8 @@
           </Row>
       </TopAppBar>
     </div>
-    <div class="carousel-container"></div>
+    <div class="top-container__right-column__carousel-container">
+      <Carousel></Carousel>
+    </div>
   </div>
 </div>
